@@ -68,9 +68,10 @@ top:-100px; right:-50px;}
  </style>
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body runat="server">
+<body>
 	<audio controls autoplay loop>
 		<source src="zelda.mp3" type="audio/mp3">
 	</audio>
@@ -132,27 +133,27 @@ top:-100px; right:-50px;}
 	function lcontrol(){
 		if(mcleft<=100){mcleft=100}
 			document.getElementById("charview").src="l.png"
-			mcleft = mcleft - 20;
+			mcleft = mcleft - 50;
 			mainc.style.left = mcleft + 'px';
 	}
 
 	function rcontrol(){
 		if(mcleft>=900){mcleft=900}
 			document.getElementById("charview").src="r.png"
-		    mcleft = mcleft + 20;
+		    mcleft = mcleft + 50;
 		mainc.style.left = mcleft + 'px';
 		}
 
 	function upcontrol(){
 		if(mctop<40){mctop=40;}
 			document.getElementById("charview").src="b.png"
-			mctop = mctop - 20;
+			mctop = mctop - 50;
 			mainc.style.top = mctop + 'px';
 	}
 	function downcontrol(){
 		if(mctop>400){mctop=400;}
 			document.getElementById("charview").src="f.png"
-			mctop = mctop + 20;
+			mctop = mctop + 50;
 			mainc.style.top = mctop + 'px';
 
 	}
